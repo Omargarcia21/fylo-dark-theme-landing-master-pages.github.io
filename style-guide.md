@@ -11,45 +11,24 @@ The designs were created to the following widths:
 
 ## Colors
 
-### Primary
+- Purple 100: hsl(254, 88%, 90%)
+- Purple 500: hsl(256, 67%, 59%)
 
-- Dark Blue (intro and email sign up background): hsl(217, 28%, 15%)
-- Dark Blue (main background): hsl(218, 28%, 13%)
-- Dark Blue (footer background): hsl(216, 53%, 9%)
-- Dark Blue (testimonials background): hsl(219, 30%, 18%)
-
-### Accent
-
-- Cyan (inside call-to-action gradient): hsl(176, 68%, 64%)
-- Blue (inside call-to-action gradient): hsl(198, 60%, 50%)
-- Light Red (error): hsl(0, 100%, 63%)
-
-### Neutral
+- Yellow 100: hsl(31, 66%, 93%)
+- Yellow 500: hsl(39, 100%, 71%)
 
 - White: hsl(0, 0%, 100%)
+- Black: hsl(0, 0%, 7%)
 
 ## Typography
 
 ### Body Copy
 
-- Font size: 14px
+- Font size (paragraph): 18px
 
-### Headings, Call-to-actions, Header Navigation
+### Font
 
-- Family: [Raleway](https://fonts.google.com/specimen/Raleway)
-- Weights: 400, 700
+- Family: [DM Sans](https://fonts.google.com/specimen/DM+Sans)
+- Weights: 400, 500
 
-### Body
-
-- Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
-- Weights: 400, 700
-
-## Icons
-
-For the social icons, you can use a font icon library. Some suggestions can be found below:
-
-- [Font Awesome](https://fontawesome.com/)
-- [IcoMoon](https://icomoon.io/)
-- [Ionicons](https://ionicons.com/)
-
-> 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma.
+> 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma. The design file for this challenge also includes a design system and tablet layout to help you build a more accurate solution faster.

@@ -1,507 +1,557 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500&display=swap');
+:root{
+    --Purple-100: hsl(254, 88%, 90%);
+    --Purple-500: hsl(256, 67%, 59%);
+    --Yellow-100: hsl(31, 66%, 93%);
+    --Yellow-500: hsl(39, 100%, 71%);
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 7%);
+    --bg-color: #F5F5F5;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:"Barlow Semi Condensed", sans-serif;
 }
-body{
-    background: hsl(217, 28%, 14%);
-    color: #fff;
-    font-family: 'Open sans', sans-serif;
-}
-nav{
-    width: 85%;
-    height: 15vh;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.logo{
-    width: 130px;
-    height: auto;
-    cursor: pointer;
-}
-ul.navbar{
-    list-style: none;
-    display: flex;
-}
-ul.navbar li{
-    width: 100px;
-}
-ul.navbar li a {
-    text-decoration: none;
-    color: #fff;
-}
-ul.navbar li a:hover{
-    text-decoration: underline;
-}
-.section-1{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-}
-.intro-desc{
-    width: 600px;
-    margin: auto;
-    margin-bottom: 30px;
-}
-.illustration{
-    width: 470px;
-    margin-bottom: 30px;
-}
-.intro-desc h1 {
-    font-size: 2rem;
-    line-height: 2.5rem;
-    margin-bottom: 25px;
-    font-family: 'Raleway', sans-serif;
-}
-.intro-desc p {
-    width: 500px;
-    line-height: 1.6rem;
-    font-weight: 700px;
-    margin: 0 auto 30px;
-}
-#btn{
-    width: 250px;
-    padding: 14px;
-    outline: none;
-    border: none;
-    border-radius: 25px;
-    background:#59d6be;
-    color: #fff;
-}
-#btn a{
-    text-decoration: none;
-    color: #fff;
-}
-#btn:hover{
-    background-color: #a5f2e6;
-}
-.curvy-bg{
-    width: 100%;
-    height: 40vh;
-    position: relative;
-    top: -210px;
-    z-index: -1;
-}
-/* S E C T I O N 2 */
-.section-2{
-    width: 100%;
-    height: auto;
-    background:hsl(218, 28%, 13%);
-    position: relative;
-    top: -210px;
-    z-index: -1;
-}
-.services{
-    width: 70%;
-    min-height: 50vh;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    text-align: center;
-}
-.service-wrapper{
-    margin: 30px 0;
-}
-.service-wrapper img {
-    width: 70px;
-    height: auto;
-    line-height: 1.5rem;
-    margin-bottom: 25px;
-}
-.service-desc{
-    width: 400px;
-    line-height: 1.5rem;
-    margin-bottom: 50px;
-}
-.service-desc h2{
-    font-size: 1.2rem;
-    font-family: 'Raleway', sans-serif;
-    margin-bottom: 10px;
-}
-/* S E C T I O N 3 starts  here*/
-.section-3{
-    width: 85%;
-    margin: 30px auto 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.section-3 img {
-    width: 550px;
-    height: auto;
-}
-.section-3-desc{
-    width: 550px;
-}
-.section-3-desc h1{
-    font-size: 2rem;
-    width: 300px;
-    margin-bottom: 15px;
-    font-family: 'Raleway', sans-serif;
-}
-.section-3-desc p{
-    margin-bottom: 30px;
-}
-.section-3-desc a{
-    color: #59d6be;
-    margin-right: 7px;
-}
-.section-3-desc a:hover{
-    color: #a5f2e6;
-}
-/* Testimonial section starts here*/
-.testimonial-section{
-    width: 90%;
-    min-height: 70vh;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    position: relative;
-}
-.testimonial-section::after{
-    content: url(./images/bg-quotes.png);
-    position: absolute;
-    top: 105px;
-    left: -10px;
-}
-.testimonial-card{
-    width: 385px;
-    height: 200px;
-    background: hsl(219, 30%, 18%);
-    padding: 25px 15px;
-    box-sizing: 2px 2px 3px hsl(217, 27%, 20%);
-    z-index: 1;
-}
-.testimonial-desc{
-    width: 345px;
-    font-size: 14px;
-    line-height: 1.5rem;
-}
-.profile-wrapper{
-    width: 220px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 30px;
-}
-.profile{
-    width: 50px;
-    height: 50px;
-    background: url(./images/profile-1.jpg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 50%;
-}
-.profile-desc span{
-    font-size: 14px;
-    color: #f3f3f3;
-}
-.profile-2{
-    background-image: url(./images/profile-2.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.profile-3{
-    background-image: url(./images/profile-3.jpg);
-    background-size: cover;
-    background-position: center;
-}
-/* Section five starts here*/
-.sign-up-section{
-    width: 60%;
-    height: 35vh;
-    margin: auto;
-    background-color: hsl(219, 30%, 18%);
-    border-radius: 5px;
-    display: flex;
-    text-align: center;
-    padding: 20px;
-    z-index: 1;
-    position: relative;
-    top: 50px;
-    box-shadow: 3px 3px 4px rgba(0,0,0,0.5);
-}
-.sign-up-desc h1{
-    margin-bottom: 15px;
-}
-form {
-    margin-top: 30px;
-}
-input[type="email"]{
-    width: 500px;
-    padding: 14px 20px;
-    outline: none;
-    border: none;
-    border-radius: 25px;
-    background: #fff;
-    margin-right: 25px;
-}
-input[type="submit"]{
-    width: 200px;
-    padding: 14px 20px;
-    outline: none;
-    border: none;
-    color: #fff;
-    background-color: #59d6be;
-    border-radius: 25px;
-}
-input[type="submit"]:hover{
-    background-color: #a5f2e6;
-}
-#errorMessage {
-    color: red; 
-    position: relative;
-    right: 220px;             /* Estilo del mensaje de error */
-    font-size: 14px;
-    display: none;           /* Inicialmente oculto */
-}
-/* Footer section*/
-footer{
-    width: 100%;
-    height: 60vh;
-    background: hsl(216, 53%, 9%);
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-footer .logo{
-    position: relative;
-    top: 100px;
-    left: 50px;
-}
-.footer-body{
-    width: 90%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-}
-.location{
-    width: 350px;
-    display: flex;
-}
-li{
-    line-height: 2rem;
-    list-style: none;
-}
-li a{
-    text-decoration: none;
-    color: #fff;
-}
-.fas{
-    margin-right: 15px;
-}
-.fab{
-    margin-right: 10px;
-    padding: 5px;
-    border: 2px solid #fff;
-    border-radius: 50%;
-}
-a .fab{
-    text-decoration: none;
-    color: #fff;
-}
-.fab:hover{
-    color: #59d6be;
-}
-.footer-bottom{
-    width: 100%;
-    height: 10vh;
-    background: hsl(217, 27%, 18%);
-    position: absolute;
-    bottom: 0;
-    left: 0;
+body {
+    font-size: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
+    min-height: 100vh;
+    background-color: var(--bg-color);
 }
-.footer-bottom a{
-    text-decoration: none
+main{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-.footer-bottom a:hover{
-    cursor: pointer;
-    color: #fff;
+.card{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.card__head{
+    display: flex;
+    align-items: center;
+    color: var(--Black);
+    margin-bottom: 10px;
+}
+.card__title{
+    font-size: 20px;
+}
+.card__img-info{
+    color: var(--White);
+}
+/* ---------------------------------------------------------------------------- C A R D 1------------------------------------------------------*/
+
+.social-media{
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    width: 100%;
+    height: 324px;
+    background-color: var(--Purple-500);
+    color: var(--White);
+    flex-basis: 75%;
+    flex-shrink: 0;
+}
+.social-media .card__head {
+    justify-content: center;
+    width: 440px;
+    height: 120px;
+}
+.social-media .card__head .card__title{
+    font-size: 55px;
+    color: var(--White);
+    font-weight: 500;
+}
+.social-media .card__head .card__title span{
+    color: var(--Yellow-500);
+}
+.social-media .card__img img{
+    width: 150px;
+}
+/* ---------------------------------------------------------------------------- C A R D 2------------------------------------------------------*/
+.multiple-plataforms{
+    width: 256px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: var(--White);
+    flex-direction: column-reverse;
+    overflow: hidden;
+}
+.multiple-plataforms .card__head {
+    width: 230px;
+    height: 139px;
+    position: relative;
+    top: 19px;
+    right: 25px;
+    line-height: .9;
+}
+.multiple-plataforms .card__img{
+    width: 300px;
+    position: relative;
+    top: 0px;
+    right: -59px;
+}
+.multiple-plataforms .card__img img {
+    width: 100%;
+    border-radius: 50px;
+}
+.multiple-plataforms .card__head .card__title{
+    text-align: left;
+    font-size: 32px;
+    font-weight: 500;
+    font-family:"Barlow Semi Condensed", sans-serif ;
+    margin-left: 50px;
+}
+/* ---------------------------------------------------------------------------- C A R D 3------------------------------------------------------*/
+.consistent-schedule{
+    grid-area: card-3;
+    width: 100%;
+    height: 257px;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    background-color: var(--Yellow-500);
+    overflow: hidden;
+    min-width: 250px;
+    min-height: 200px;
+}
+.consistent-schedule .card__head{
+    transform: translateX(-10px);
+    position: relative;
+    bottom: -37px;
+}
+.consistent-schedule .card__img {
+    position: relative;
+    bottom: -35px;
+}
+.consistent-schedule .card__img img {
+    width: 210px;
+    height: 116px;
+    position: relative;
+    right: 12px;
+}
+.consistent-schedule .card__head .card__title{
+    text-align: left;
+    font-size: 39px;
+    font-weight: 500;
+    line-height: 0.9;
+    margin: 10px;
+    letter-spacing: -3px;
+}
+/* --------------------------------------------------------------------------- C A R D 4------------------------------------------------------*/
+.schedule-posts{
+    grid-column: 4 / 5;
+    grid-row: 1 / 3;
+    background-color: var(--Purple-100);
+    overflow: hidden;
+    width: 273px;
+    height: 603px;
+}
+.schedule-posts .card__head{
+    position: relative;
+    bottom: 10px;
+    width: 175px;
+    height: 55px;
+}
+.schedule-posts .card__head .card__title{
+    font-size: 33px;
+    letter-spacing: -3px;
+    text-align: left;
+}
+.schedule-posts .card__img{
+    position: relative;
+    top: 10px;
+    left: 96px;
+    width: 410px;
+}
+.schedule-posts .card__img img{
+    border-radius: 20px;
+    width: 100%;
+    height: 321px;
+}
+.schedule-posts .card__img-info{
+    line-height: 16px;
+    color: #000;
+    padding: 10px;
+    font-size: 20px;
+    text-align: left;
+    margin: 20px 20px 20px 10px;
+    font-weight: 400;
+}
+/* ---------------------------------------------------------------------------- C A R D 5------------------------------------------------------*/
+.grow-followers{
+    grid-column: 3 / 5;
+    grid-row: 3 / 3;
+    background-color: var(--Purple-500);
+    flex-direction: row-reverse;
+}
+.grow-followers .card__head{
+    margin-left: 40px;
+}
+.grow-followers .card__head .card__title{
+    width: 260px;
+    height: 130px;
+    font-size: 36px;
+    text-align: left;
+    color: var(--White);
+}
+.grow-followers .card__img{
+    width: 194px;
+    height: 190px;
+}
+.grow-followers .card__img img{
+    width: 118%;
+    height: 100%;
+    max-width: 100%;
+    display: block;
+}
+/* ---------------------------------------------------------------------------- C A R D 6------------------------------------------------------*/
+.audience-growth{
+    grid-area: card-6;
+    grid-column: 2 / 3;
+    grid-row: 3 / 3;
+    background-color: var(--White);
+    width: 256px;
+}
+.audience-growth .card__head{
+    flex-direction: column;
+}
+.audience-growth .card__head .card__title{
+    font-size: 18px;
+    margin-bottom: 20PX;
+}
+.audience-growth .card__head span{
+    color: #000;
+    font-size: 50px;
+    font-weight: 600;
+}
+.audience-growth .card__img{
+    width: 188px;
+    height: 75px;
+}
+.audience-growth .card__img img{
+    width: 100%;
+}
+/* ---------------------------------------------------------------------------- C A R D 7------------------------------------------------------*/
+.create-post{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    background-color: var(--Yellow-100);
+    margin-left: 74px;
+    height: 411px;
+}
+.create-post .card__head{
+    margin: 0px 30px 5px;
+    width: 156px;
+    height: auto;
+    line-height: 2em;
+}
+.create-post .card__head .card__title{
+    font-size: 39px;
+    font-weight: 500;
+    text-align: left;
+}
+.create-post .card__head .card__title span{
+    color: var(--Purple-500);
+}
+.create-post .card__img{
+    width: 202px;
+    height: 93px;
+    margin-top: 20px;
+}
+.create-post .card__img img{
+    width: 100%;
+    height: 100%;
+}
+/* ---------------------------------------------------------------------------- C A R D 8------------------------------------------------------*/
+.ai-content{
+    margin-top: 30px;
+    margin-top: 95px;
+    margin-left: 74px;
+    grid-column: 1/2;
+    grid-row: 2/ 4;
+    width: 256px;
+    height: 435px;
+    background-color: var(--Yellow-500);
+}
+.ai-content .card__head{
+    margin-bottom: 20px
+}
+.ai-content .card__head .card__title{
+    font-size: 48px;
+    font-weight: 500;
+    text-align: left;
+    line-height: 1em;
+    letter-spacing: -3px;
+}
+.ai-content .card__img{
+    width: 222px;
+    height: 223px;
+    margin-top: 30px;
+}
+.ai-content .card__img img{
+    width: 100%;
+    height: 100%;
+}
+/* -------------------------------------------------------------------------F O O T E R-----------------------------------------------------*/
+.attribution { 
+    grid-column: 2 / 4;
+    grid-row: 4/4;
+    font-size: 20px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
 }
 
-
-
-
-
-
-
-
-
-
-/* Media queries for small devices */
-@media screen and (max-width:375px) {
-    nav{
-        width: 90%;
-    }
-    .logo{
-        width: 70px;
-        height: auto;
-    }
-    ul.navbar li{
-        width: 70px;
-        margin-right: 5px;
-    }
-    ul.navbar li:nth-child(2){
-        width: 50px;
-    }
-    ul.navbar li:nth-child(3){
-        width: 50px;
-    }
-    .section-1{
-        width: 300px;
-        margin: auto;
-    }
-    .illustration{
-        width: 350px;
-    }
-    .intro-desc{
-        width: 300px;
-        margin: auto;
-    }
-    .intro-desc h1 {
-        font-size: 1.5rem;
-        line-height: 2rem;
-    }
-    .intro-desc p{
-        width: 318px;
-        line-height: 1.5rem;
-    }
-    #btn{
-        width: 200px;
-    }
-    .curvy-bg{
-        display: none;
-    }
-    /* Media query for section starts here*/
-
-    .services{
-        width: 85%;
-        margin: 250px auto 0;
-    }
-    .service-desc{
-        width: 300px;
-        margin: auto;
-    }
-    .service-desc h2 {
-        margin-bottom: 10px;
-        font-size: 1.2rem;
-    }
-    .service-desc p {
-        font-size: 14px;
-        width: 200px;
-        margin: auto;
-    }
-    /* Section 3 starts here*/
-    .section-3{
-        margin-top: 0;
-    }
-    .section-3 img {
-        width: 300px;
-        height: auto;
-    }
-    .section-3-desc h1{
-        font-size: 1rem;
-        margin: 15px 0;
-    }
-    .section-3-desc p{
-        margin-bottom: 30px;
-        font-size: 14px;
-    }
-    /* Testimonial section starts here*/
-    .testimonial-section{
-        width: 90%;
-        min-height: 100vh;
-        margin: 100px auto 0;
-    }
-    .testimonial-section::after{
-        top: -30px;
-        left: -10px;
-    }
-    .testimonial-card{
-        width: 350px;
-        height: 230px;
-        margin-bottom: 25px;
-    }
-    .testimonial-desc{
-        width: 310px;
-    }
-    /* Section form starts here*/
-    .sign-up-section{
-        width: 90%;
-        height: 60vh;
-        margin: auto;
-        position: relative;
-        top: 50px;
-    }
-    .sign-up-desc{
-        width: 300px;
-    }
-    .sign-up-desc h1{
-        margin-bottom: 15px;
-        font-size: 1.2rem;
-    }
-    input[type="email"]{
-        width: 300px;
-        margin-bottom: 15px;
-    }
-    input[type="submit"]{
-        width: 300px;
-    }
-    /* Footr section*/
-    footer{
-        height: 120vh;
-    }
-    footer .logo{
-        width: 120px;
-        top: 80px;
-        left: 30px;
-    }
-    .footer-body{
-        width: 85%;
+@media (max-width: 900px) {
+    main {
+        display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        padding: 10px;
     }
-    .location{
+    .card{
+        padding: 10px;
+    }
+    .card__head{
+        margin-bottom: 0;
+    }
+/* --------------------------------------------------------------------- C A R D 1--------------------------------------------------*/
+    .social-media{
+        width: 340px;
+        height: 294px;
+    }
+    .social-media .card__head {
+        width: 90%;
+        height: 60%;
+    }   
+    .social-media .card__head .card__title{
+        font-size: 3em;
+        text-align: center;
+    }
+    .social-media .card__img{
+        margin-top: 10px;
+        margin: 35px 0 10px;
+    }
+    .social-media .card__img img{
+        width: 150px;
+    }
+/* --------------------------------------------------------------------- C A R D 2--------------------------------------------------*/
+
+    .multiple-plataforms{
+        width: 343px;
+        height: 163px;
+    }
+    .multiple-plataforms .card__head {
+        width: 100%;
+        height: 61px;
+        position: relative;
+        top: 9px;
+        right: 0px;
+    }
+    .multiple-plataforms .card__img{
+        width: 311px;
+        position: relative;
+        left: 0px;
+    }
+    .multiple-plataforms .card__img img {
+        width: 100%;
+        border-radius: 50px;
+    }
+    .multiple-plataforms .card__head .card__title{
+        font-size: 1.7em;
+        margin-left: 0px;
+        font-weight: 500;
+    }
+/* --------------------------------------------------------------------- C A R D 3--------------------------------------------------*/
+
+    .consistent-schedule{
+        width: 341px;
+        height: 215px;
+    }
+    .consistent-schedule .card__head{
+        transform: translateX(-10px);
+        position: relative;
+        bottom: 0px;
+    }
+    .consistent-schedule .card__img {
+        position: relative;
+        bottom: -35px;
+    }
+    .consistent-schedule .card__img img {
+        width: 200px;
+        height: 115px;
+        position: relative;
+        right: 50px;
+        bottom: 5px;
+    }
+    .consistent-schedule .card__head .card__title{
+        text-align: left;
+        font-size: 34px;
+        font-weight: 500;
+        margin: 9px;
+    }
+/* --------------------------------------------------------------------- C A R D 4--------------------------------------------------*/
+    .schedule-posts{
+        width: 342px;
+        height: 471px;
+        background-color: var(--Purple-100);
+    }
+    .schedule-posts .card__head{
+        width: 266px;
+        margin-top: 10px;
+    }
+    .schedule-posts .card__head .card__title{
+        font-size: 25px;
+        letter-spacing: 0.02em;
+        text-align: center;
+        font-weight: 500;
+    }
+    .schedule-posts .card__img{
+        position: relative;
+        left: 0px;
+        width: 310px;
+        height: 274px;
+    }
+    .schedule-posts .card__img img{
+        border-radius: 20px;
+        width: 100%;
+        height: 285px;
+    }
+    .schedule-posts .card__img-info{
+        color: #000;
+        padding: 10px;
+        font-size: 21px;
+        text-align: center;
+        margin: 25px 10px 20px 10px;
+        font-weight: 500;
+        line-height: 1em;
+    }
+/* --------------------------------------------------------------------- C A R D 5--------------------------------------------------*/
+    .grow-followers{
+        width: 345px;
+        height: 373px;
+        background-color: var(--Purple-500);
+        flex-direction: column-reverse;
+    }
+    .grow-followers .card__head{
+        margin: 0 auto;
+    }
+    .grow-followers .card__head .card__title{
+        width: 260px;
+        height: 130px;
+        font-size: 36px;
+        text-align: center;
+        color: var(--White);
+        font-weight: 500;
+        line-height: 1em;
+        margin-top: 10px;
+    }
+    .grow-followers .card__img{
+        width: 236px;
+        height: 203px;
+    }
+    .grow-followers .card__img img{
+        width: 100%;
+        height: 100%;
+    }
+/* --------------------------------------------------------------------- C A R D 6--------------------------------------------------*/
+    .audience-growth{
+        background-color: var(--White);
+        width: 338px;
+        height: 216px;
+    }
+    .audience-growth .card__head{
+        flex-direction: column;
+        position: relative;
+        right: 50px;
+    }
+    .audience-growth .card__head .card__title{
+        font-size: 18px;
+        position: relative;
+        bottom: 20px;
+        left: 20px;
+        color: #000;
+        font-weight: 500;
+    }
+    .audience-growth .card__img{
+        width: 188px;
+        height: 75px;
+        position: relative;
+        right: 50px;
+    }
+/* --------------------------------------------------------------------- C A R D 7--------------------------------------------------*/
+    .create-post{
+        background-color: var(--Yellow-100);
+        width: 334px;
+        height: 233px;
+        justify-content: center;
+        position: relative;
+        right: 40px;
+    }
+    .create-post .card__head{
         width: 300px;
+        height: 70px;
     }
-    .footer-body p{
-        font-size: 14px;
-        margin-bottom: 35px;
-        line-height: 1.2rem;
+    .create-post .card__head .card__title{
+        font-size: 2em;
+        font-weight: 500;
     }
-    .about-us{
-        margin: 30px 0;
+    .create-post .card__head .card__title span{
+        color: var(--Purple-500);
     }
-    .social-links{
-        width: 35%;
-        margin: 15px auto 0;
+    .create-post .card__img{
+        width: 195px;
+        height: 90px;
+        position: relative;
+        right: 45px;
+        bottom: 10px;
     }
-    .fab{
-        font-size: 10px;
+/* --------------------------------------------------------------------- C A R D 8--------------------------------------------------*/
+    .ai-content{
+        width: 334px;
+        height: 353px;
+        position: relative;
+        bottom: 90px;
+        right: 40px;
+        background-color: var(--Yellow-500);
     }
-    .footer-bottom{
-        height: 8vh;
-        font-size: 0.875rem;
+    .ai-content .card__head{
+        position: relative;
+        top: 20px;
+    }
+    .ai-content .card__head .card__title{
+        font-size: 2.5em;
+        font-weight: 500;
+        text-align: left;
+    }
+    .ai-content .card__img{
+        width: 222px;
+        height: 223px;
+        margin-top: 20px;
+        position: relative;
+        right: 35px;
+        bottom: 10px;
+    }
+    /* --------------------------------Footer----------------------------------------------------------------------------------------*/
+    .attribution {
+        position: relative;
+        bottom: 80px;
     }
 }
-
-
-
-
-
-
-
-
